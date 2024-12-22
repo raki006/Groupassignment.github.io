@@ -1,5 +1,5 @@
-/* General Reset */
-body, html {
+ /* CSS CODE */
+ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -24,8 +24,8 @@ body, html {
 
 /* Hero Section with Background Image */
 .hero-section {
-    background: url('cover for my webpage.jpg') no-repeat center center/cover;
-    height: 100vh; /* Full screen height */
+    background: url('bluegradient.jpg') no-repeat center center/cover;
+    height: 100vh; /* for the image to fill the entire screen to make it look more responsive */
     position: relative;
 }
 
@@ -44,3 +44,8 @@ body, html {
     position: relative;
     z-index: 2;
 }
+
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.7); /* Change to semi-transparent black on scroll */
+}
+
