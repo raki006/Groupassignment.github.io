@@ -53,7 +53,6 @@
             });
         </script>
         
-        
         <div class="logo">
         </div>
     </header>
@@ -62,49 +61,36 @@
         <img id="fullscreen-image" src="background3.jpg" alt="Second Full Screen Image">
          <div class="content"> 
 
-            <script>
-                const profiles = [
-                    {
-                        img: 'student1.jpg',
-                        name: 'Maria Federica Albani',
-                        description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!',
-                        
-                        link: 'https://www.instagram.com/wisq_qasira/'
-                    },
-                    {
-                        img: 'student2.jpg',
-                        name: 'Martina Vella',
-                        description: 'Martina will mix digital creation with video games in a new RPG one can play that focuses on learning about Maltese battles during the Knight era. Step into a 3D world where you become one with the battle.',
-                        link: 'https://www.instagram.com/martinavella888/?hl=en'
-                    },
-                    {
-                        img: 'student3.jpg',
-                        name: 'Raquel Gili',
-                        description: 'Raquel focuses on nostalgia, a feeling we all have felt before. Imagine stepping back into your childhood memories simply by touching objects from that period. The images and Home videos shown are like memories in your mind but translated on a retro screen, making you relive your nostalgia. ',
-                        link: 'https://www.instagram.com/ghandi_nghas_kbir/?hl=en'
-                    }
-                     //Add more profiles as needed
-                ];
-                let currentProfileIndex = 0;
-        
-                const updateProfile = () => {
-                    document.getElementById('artist-image').src = profiles[currentProfileIndex].img;
-                    document.getElementById('artist-image').parentElement.href = profiles[currentProfileIndex].link;
-                    document.getElementById('artist-name').innerText = profiles[currentProfileIndex].name;
-                    document.getElementById('artist-description').innerText = profiles[currentProfileIndex].description;
-                };
-        
-                document.getElementById('next-button').addEventListener('click', () => {
-                    currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
-                    updateProfile();
-                });
-        
-                // Initial profile display
-                updateProfile();
-            </script>
+            <section class="countdown">
+                <h3>Countdown to Exhibition!</h3>
+                <div id="countdown-timer"></div>
+            </section>
+            </section>
+            </main>
+                <script>
+                    // JavaScript for Countdown
+                    const countdown = () => {
+                        const countDate = new Date("Jun 1, 2025 00:00:00").getTime();
+                        const now = new Date().getTime();
+                        const gap = countDate - now;
             
-        </section>
-    </section>
+                        const second = 1000;
+                        const minute = second * 60;
+                        const hour = minute * 60;
+                        const day = hour * 24;
+            
+                        const textDay = Math.floor(gap / day);
+                        const textHour = Math.floor((gap % day) / hour);
+                        const textMinute = Math.floor((gap % hour) / minute);
+                        const textSecond = Math.floor((gap % minute) / second);
+            
+                        document.getElementById('countdown-timer').innerHTML =
+                            `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
+                    };
+            
+                    setInterval(countdown, 1000);
+                </script>
+            </section>
 
     <section class="fullscreen-container-2">
         <img id="fullscreen-image" src="background4.jpg" alt="Second Full Screen Image">
@@ -139,35 +125,5 @@
 <section class="fullscreen-container-2">
 <img id="fullscreen-image" src="background3 copy.jpg" alt="Full Screen Image">
 <div class="content">
-<section class="countdown">
-    <h3>Countdown to Exhibition!</h3>
-    <div id="countdown-timer"></div>
-</section>
-</section>
-</main>
-    <script>
-        // JavaScript for Countdown
-        const countdown = () => {
-            const countDate = new Date("Jun 1, 2025 00:00:00").getTime();
-            const now = new Date().getTime();
-            const gap = countDate - now;
-
-            const second = 1000;
-            const minute = second * 60;
-            const hour = minute * 60;
-            const day = hour * 24;
-
-            const textDay = Math.floor(gap / day);
-            const textHour = Math.floor((gap % day) / hour);
-            const textMinute = Math.floor((gap % hour) / minute);
-            const textSecond = Math.floor((gap % minute) / second);
-
-            document.getElementById('countdown-timer').innerHTML =
-                `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
-        };
-
-        setInterval(countdown, 1000);
-    </script>
-</section>
 </body>
 </html>
