@@ -64,50 +64,29 @@ body {
     text-align: center;
 }
 
-/* Ensure the Navbar is sticky and at the top */
+/* Transparent Navbar */
 .navbar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%; /* to make sure it takes all the screen length*/
-    background-color: #252525;
-    color: #1a391a;
-    padding: 15px 20px; /* Space inside the navbar */
-    margin-bottom: 20px;
-    font-family: "Syne Mono", monospace;
-    z-index: 1000; /* Ensure it stays on top of other elements */
-    display: flex; /* Use Flexbox */
-    justify-content: space-between; /* Distribute space evenly */ 
-    align-items: center; /* Center the items vertically */
-
-}
-
-/* Navbar brand styling */
-.navbar .navbar-brand {
-    font-size: 3rem;
-    color: #202020;
-}
-
-/* Navbar links container styling */
- .navbar .navbar-nav { 
-    display: flex; /* Use Flexbox */ 
-    justify-content: space-between; /* Distribute space evenly */
-     width: 100%; /* Ensure it takes the full width */
- }
- 
-/* Navbar links styling */
-.navbar .navbar-nav a {
-    font-size: 1rem; /* Smaller font size */
-    margin: 0 10px;
-    color: #000000;
-    text-decoration: none;
-}
-
-/* Navbar links hover and focus effect */
-.navbar .navbar-nav a:hover, 
-.navbar .navbar-nav a:focus {
-    color: #4caf50;
-}
+    background: transparent !important;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    z-index: 10;
+  }
+  .navbar-dark .navbar-brand,
+  .navbar-dark .nav-link {
+    color: #fff !important; /* White text */
+    transition: color 0.3s ease;
+  }
+  .navbar-dark .nav-link:hover {
+    color: #00d9ff !important; /* Highlight color on hover */
+  }
+  .navbar.scrolled {
+    background: rgba(0, 0, 0, 1) !important; /* Solid black background on scroll */
+  }
+  
+  /* Solid Navbar for Sponsors */
+.solid-navbar {
+    background: rgba(0, 0, 0, 1) !important; /* Solid black background */
+  }
+  
 
 
 .intro {
