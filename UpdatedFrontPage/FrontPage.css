@@ -19,7 +19,6 @@ body {
      display: flex; 
      justify-content: center;
       align-items: center; 
-      background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
        color: white; text-align: center; }
 
 /* Style for gallery container */
