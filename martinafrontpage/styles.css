@@ -43,6 +43,12 @@ body, html {
   position: relative;
   z-index: 3;
 }
+/* Solid Navbar for Sponsors */
+.solid-navbar {
+  background: rgba(0, 0, 0, 1) !important; /* Solid black background */
+}
+
+
 
 /* Image Container with Overlay (Showcase and Sponsors) */
 .image-container {
