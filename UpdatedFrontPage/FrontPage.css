@@ -1,3 +1,4 @@
+/* Apply a fixed background to the entire page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -24,22 +25,35 @@ body {
 /* Style for gallery wrapper */
 .gallery-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(20px, 1fr)); /* Adjust the size of the images */
-    gap: 10px; /* Space between the images */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust the size of the images */
+    gap: 15px; /* Space between the images */
     padding: 20px; /* Padding around the gallery */
 }
 
+/* Style for gallery items */
+.gallery-item {
+    text-align: center;
+}
+
 /* Style for gallery images */
-.gallery-wrapper img {
+.gallery-item img {
     width: 100%;
     height: auto;
     border-radius: 8px; /* Optional: add rounded corners */
     transition: transform 0.2s; /* Optional: add zoom effect on hover */
 }
 
-.gallery-wrapper img:hover {
+.gallery-item img:hover {
     transform: scale(1.05); /* Optional: add zoom effect on hover */
 }
+
+/* Style for gallery captions */
+.gallery-item p {
+    margin-top: 10px;
+    color: #000000; /* Adjust text color */
+    font-size: 0.9em; /* Adjust text size */
+}
+
 
 #progress-bar-container {
     position: fixed;
