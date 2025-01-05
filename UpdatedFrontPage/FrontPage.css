@@ -53,6 +53,17 @@ body {
     font-size: 0.9em; /* Adjust text size */
 }
 
+/* Hide the scrollbar for the gallery container */
+.gallery-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.gallery-container {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+}
+
+
 
 #progress-bar-container {
     position: fixed;
