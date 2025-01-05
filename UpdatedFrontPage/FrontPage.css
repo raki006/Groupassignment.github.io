@@ -24,7 +24,7 @@ body {
 /* Style for gallery wrapper */
 .gallery-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Adjust the size of the images */
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjust the size of the images */
     gap: 15px; /* Space between the images */
     padding: 20px; /* Padding around the gallery */
 }
