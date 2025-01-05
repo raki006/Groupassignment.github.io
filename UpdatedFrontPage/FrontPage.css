@@ -11,6 +11,13 @@ body {
     align-items: center;
     background: url('background2.jpg') no-repeat center center fixed; /* Replace with your background image */
     background-size: cover;
+    scroll-snap-type: y mandatory; /* Enable scroll snapping for the body */
+    overflow-y: scroll; /* Allow vertical scrolling */
+}
+
+/* Add scroll-snap-align to your sections */
+.fullscreen-intro, .gallery-container, .fullscreen-container, .fullscreen-container-2 {
+    scroll-snap-align: start; /* Snap alignment */
 }
 
 /* Fullscreen intro section */
