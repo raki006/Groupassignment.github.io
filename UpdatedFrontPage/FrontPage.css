@@ -64,32 +64,39 @@ body {
     text-align: center;
 }
 
+/* Ensure the Navbar is sticky and at the top */
 .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: #252525;
     color: #1a391a;
-    background-color: #252525;
     padding: 15px 20px; /* Space inside the navbar */
     margin-bottom: 20px;
     font-family: "Syne Mono", monospace;
-    height: 250px;
-  }
-  
-  .navbar .navbar-brand {
+    height: auto; /* Adjust height if necessary */
+}
+
+/* Navbar brand styling */
+.navbar .navbar-brand {
     font-size: 3rem;
     color: #202020;
-  }
-  
-  .navbar .navbar-nav a {
-    font-size: 3.2rem;
+}
+
+/* Navbar links styling */
+.navbar .navbar-nav a {
+    font-size: 1rem; /* Smaller font size */
     margin: 0 10px;
     color: #000000;
     text-decoration: none;
-  }
-  
-  .navbar .navbar-nav a:hover, 
-  .navbar .navbar-nav a:focus {
+}
+
+/* Navbar links hover and focus effect */
+.navbar .navbar-nav a:hover, 
+.navbar .navbar-nav a:focus {
     color: #4caf50;
-  }
+}
+
 
 .intro {
     padding: 2rem 0;
