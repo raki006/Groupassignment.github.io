@@ -76,6 +76,9 @@ body {
     margin-bottom: 20px;
     font-family: "Syne Mono", monospace;
     z-index: 1000; /* Ensure it stays on top of other elements */
+    display: flex; /* Use Flexbox */
+    justify-content: space-between; /* Distribute space evenly */ 
+    align-items: center; /* Center the items vertically */
 
 }
 
@@ -85,6 +88,13 @@ body {
     color: #202020;
 }
 
+/* Navbar links container styling */
+ .navbar .navbar-nav { 
+    display: flex; /* Use Flexbox */ 
+    justify-content: space-between; /* Distribute space evenly */
+     width: 100%; /* Ensure it takes the full width */
+ }
+ 
 /* Navbar links styling */
 .navbar .navbar-nav a {
     font-size: 1rem; /* Smaller font size */
