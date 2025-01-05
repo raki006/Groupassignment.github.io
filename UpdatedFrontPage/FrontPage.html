@@ -30,7 +30,6 @@
 
     <header>
         
-
         <div id="progress-bar-container">
             <div id="progress-bar"></div>
         </div>
@@ -62,6 +61,48 @@
     <section class="fullscreen-container-2">
         <img id="fullscreen-image" src="background3.jpg" alt="Second Full Screen Image">
          <div class="content"> 
+
+            <script>
+                const profiles = [
+                    {
+                        img: 'student1.jpg',
+                        name: 'Maria Federica Albani',
+                        description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!',
+                        
+                        link: 'https://www.instagram.com/wisq_qasira/'
+                    },
+                    {
+                        img: 'student2.jpg',
+                        name: 'Martina Vella',
+                        description: 'Martina will mix digital creation with video games in a new RPG one can play that focuses on learning about Maltese battles during the Knight era. Step into a 3D world where you become one with the battle.',
+                        link: 'https://www.instagram.com/martinavella888/?hl=en'
+                    },
+                    {
+                        img: 'student3.jpg',
+                        name: 'Raquel Gili',
+                        description: 'Raquel focuses on nostalgia, a feeling we all have felt before. Imagine stepping back into your childhood memories simply by touching objects from that period. The images and Home videos shown are like memories in your mind but translated on a retro screen, making you relive your nostalgia. ',
+                        link: 'https://www.instagram.com/ghandi_nghas_kbir/?hl=en'
+                    }
+                     //Add more profiles as needed
+                ];
+                let currentProfileIndex = 0;
+        
+                const updateProfile = () => {
+                    document.getElementById('artist-image').src = profiles[currentProfileIndex].img;
+                    document.getElementById('artist-image').parentElement.href = profiles[currentProfileIndex].link;
+                    document.getElementById('artist-name').innerText = profiles[currentProfileIndex].name;
+                    document.getElementById('artist-description').innerText = profiles[currentProfileIndex].description;
+                };
+        
+                document.getElementById('next-button').addEventListener('click', () => {
+                    currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
+                    updateProfile();
+                });
+        
+                // Initial profile display
+                updateProfile();
+            </script>
+            
         </section>
     </section>
 
@@ -91,47 +132,6 @@
             </div>
             </section>
     </section>    
-    
-        <script>
-            const profiles = [
-                {
-                    img: 'student1.jpg',
-                    name: 'Maria Federica Albani',
-                    description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!',
-                    
-                    link: 'https://www.instagram.com/wisq_qasira/'
-                },
-                {
-                    img: 'student2.jpg',
-                    name: 'Martina Vella',
-                    description: 'Martina will mix digital creation with video games in a new RPG one can play that focuses on learning about Maltese battles during the Knight era. Step into a 3D world where you become one with the battle.',
-                    link: 'https://www.instagram.com/martinavella888/?hl=en'
-                },
-                {
-                    img: 'student3.jpg',
-                    name: 'Raquel Gili',
-                    description: 'Raquel focuses on nostalgia, a feeling we all have felt before. Imagine stepping back into your childhood memories simply by touching objects from that period. The images and Home videos shown are like memories in your mind but translated on a retro screen, making you relive your nostalgia. ',
-                    link: 'https://www.instagram.com/ghandi_nghas_kbir/?hl=en'
-                }
-                 //Add more profiles as needed
-            ];
-            let currentProfileIndex = 0;
-    
-            const updateProfile = () => {
-                document.getElementById('artist-image').src = profiles[currentProfileIndex].img;
-                document.getElementById('artist-image').parentElement.href = profiles[currentProfileIndex].link;
-                document.getElementById('artist-name').innerText = profiles[currentProfileIndex].name;
-                document.getElementById('artist-description').innerText = profiles[currentProfileIndex].description;
-            };
-    
-            document.getElementById('next-button').addEventListener('click', () => {
-                currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
-                updateProfile();
-            });
-    
-            // Initial profile display
-            updateProfile();
-        </script>
     </div>
 </body>
 </html>
