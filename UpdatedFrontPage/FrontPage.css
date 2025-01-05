@@ -69,12 +69,14 @@ body {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    width: 100%; /* to make sure it takes all the screen length*/
     background-color: #252525;
     color: #1a391a;
     padding: 15px 20px; /* Space inside the navbar */
     margin-bottom: 20px;
     font-family: "Syne Mono", monospace;
-    height: auto; /* Adjust height if necessary */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+
 }
 
 /* Navbar brand styling */
