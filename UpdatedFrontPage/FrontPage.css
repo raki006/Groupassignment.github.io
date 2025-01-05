@@ -125,7 +125,7 @@ body {
 /* Gallery container styling */
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the size of the images */
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust the size of the images */
     gap: 10px; /* Space between the images */
     padding: 20px; /* Padding around the gallery */
 }
