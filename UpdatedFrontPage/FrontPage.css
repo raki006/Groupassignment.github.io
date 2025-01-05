@@ -18,7 +18,6 @@ body {
     height: 100vh; /* Full viewport height */
     overflow-y: auto; /* Allow vertical scrolling */
     position: relative;
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
     z-index: 1; /* Ensure the gallery is on top of the background */
 }
 
