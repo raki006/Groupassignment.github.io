@@ -8,12 +8,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('background2.jpg'); /* Replace with your background image */
-    background-attachment: fixed; /* Keeps the background image fixed */
+    background: url('background-image.jpg') no-repeat center center fixed; /* Replace with your background image */
     background-size: cover;
 }
 
+/* Style for gallery container */
+.gallery-container {
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
+    z-index: 1; /* Ensure the gallery is on top of the background */
+}
 
+/* Style for gallery wrapper */
+.gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the size of the images */
+    gap: 10px; /* Space between the images */
+    padding: 20px; /* Padding around the gallery */
+}
+
+/* Style for gallery images */
+.gallery-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+    transition: transform 0.2s; /* Optional: add zoom effect on hover */
+}
+
+.gallery-wrapper img:hover {
+    transform: scale(1.05); /* Optional: add zoom effect on hover */
+}
 
 #progress-bar-container {
     position: fixed;
@@ -124,38 +150,6 @@ body {
 #countdown-timer {
     font-size: 3em; /* Make the timer text larger */
     margin-top: 20px; /* Add some spacing */
-}
-
-
-/* Gallery container styling 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); /* Adjust the size of the images 
-    gap: 10px; /* Space between the images 
-    padding: 20px; /* Padding around the gallery
-}
-
-/* Gallery images styling 
-.gallery-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 15px; /* Optional: add rounded corners 
-    transition: transform 0.2s; /* Optional: add zoom effect on hover 
-}
-
-.gallery-container img:hover {
-    transform: scale(1.05); /* Optional: add zoom effect on hover 
-} */
-
-/* Style for gallery container */
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the size of the images */
-    gap: 10px; /* Space between the images */
-    padding: 20px; /* Padding around the gallery */
-    position: relative;
-    z-index: 1; /* Ensures the gallery is on top of the background */
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for better readability */
 }
 
 .social-footer {
