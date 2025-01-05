@@ -121,23 +121,26 @@ body {
     margin-top: 20px; /* Add some spacing */
 }
 
-/* Gallery Section */
+
+/* Gallery container styling */
 .gallery-container {
     display: grid;
-   
-    gap: 25px;
-    padding: 25px;
-    background: #f5f5f5;
-  }
-  
-  .gallery-container img {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Adjust the size of the images */
+    gap: 10px; /* Space between the images */
+    padding: 20px; /* Padding around the gallery */
+}
+
+/* Gallery images styling */
+.gallery-container img {
     width: 100%;
-    aspect-ratio: 1 / 1; 
-    object-fit: cover;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    clip-path:polygon(0% 25%, 25% 0%, 75% 0%, 100% 25%, 100% 75%, 75% 100%, 25% 100%, 0% 75%);
-  }  
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+    transition: transform 0.2s; /* Optional: add zoom effect on hover */
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05); /* Optional: add zoom effect on hover */
+}
 
 .social-footer {
     position: absolute; /* Ensure it stays in the flow of the document */
