@@ -73,7 +73,10 @@ body {
     display: none; /* For Chrome, Safari, and Opera */
 }
 
-
+.gallery-container {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+}
 
 #progress-bar-container {
     position: fixed;
