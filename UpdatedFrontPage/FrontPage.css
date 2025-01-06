@@ -157,7 +157,6 @@ body {
   }
   
 
-
 .intro {
     padding: 2rem 0;
 }
@@ -176,7 +175,7 @@ body {
     align-items: center;
     text-align: center;
     margin-top: auto ;
-    margin-bottom: -25rem;
+    margin-bottom: 25rem;
     color: white;
     height: 100%; /* Take full height */
     width: 100%; /* Take full width */
