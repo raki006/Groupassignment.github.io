@@ -142,6 +142,7 @@ body {
   .navbar-dark .nav-link {
     color: #fff !important; /* White text */
     transition: color 0.3s ease;
+    font-family: "Syne Mono", monospace;
   }
   .navbar-dark .nav-link:hover {
     color: #00d9ff !important; /* Highlight color on hover */
