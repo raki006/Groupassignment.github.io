@@ -114,3 +114,20 @@ body, html {
   margin-bottom: 40px;
   text-align: center;
 }
+
+.social-icons a i {
+  color: #06071b; /* Blue from background home image */
+}
+
+.social-icons a i {
+  vertical-align: middle; /* Aligns icon in the center */
+  display: inline-block; /* Makes the icon behave like a block element */
+  line-height: 2; /* Removes extra spacing*/
+  text-decoration: none; /* Removes underline to make it neater */
+}
+
+#contact h2 {
+  margin-top: 100px; 
+  font-weight: bold; /* to make the font bold */
+  font-size: 2.5rem; /* to adjust font size */
+}
