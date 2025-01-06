@@ -176,6 +176,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
     color: white;
     height: 100%; /* Take full height */
     width: 100%; /* Take full width */
