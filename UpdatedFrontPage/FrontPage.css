@@ -73,11 +73,6 @@ body {
     display: none; /* For Chrome, Safari, and Opera */
 }
 
-.gallery-container {
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
-    scrollbar-width: none; /* For Firefox */
-}
-
 
 
 #progress-bar-container {
@@ -176,8 +171,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin-top: auto ;
+    margin-bottom: -25rem;
     color: white;
     height: 100%; /* Take full height */
     width: 100%; /* Take full width */
