@@ -119,8 +119,6 @@ body {
     scrollbar-width: none; /* For Firefox */
 }
 
-
-
 #progress-bar-container {
     position: fixed;
     top: 0;
@@ -185,6 +183,7 @@ body {
   .navbar-dark .nav-link {
     color: #fff !important; /* White text */
     transition: color 0.3s ease;
+    font-family: "Syne Mono", monospace;
   }
   .navbar-dark .nav-link:hover {
     color: #00d9ff !important; /* Highlight color on hover */
@@ -198,7 +197,6 @@ body {
     background: rgba(0, 0, 0, 1) !important; /* Solid black background */
   }
   
-
 
 .intro {
     padding: 2rem 0;
@@ -217,6 +215,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 25rem ;
+    margin-bottom: 25rem;
     color: white;
     height: 100%; /* Take full height */
     width: 100%; /* Take full width */

@@ -1,4 +1,7 @@
-/* General Reset */
+html{
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
   font-family: "Syne Mono", monospace;
@@ -14,6 +17,7 @@ body {
   margin-bottom: 20px;
   font-family: "Syne Mono", monospace;
   height: 250px;
+  
 }
 
 .navbar .navbar-brand {
@@ -89,6 +93,8 @@ body {
 
 /* Extra Small and Small Screens (Phones and small devices) */
 @media only screen and (max-width: 576px) {
+
+  
   .navbar .navbar-nav a {
     font-size: 0.9rem; 
   }
@@ -109,7 +115,7 @@ body {
   }
 
   .coverphoto-text p {
-    font-size: 1rem; 
+    font-size: 1.5rem; 
   }
 
   .gallery-container {
@@ -120,11 +126,11 @@ body {
 /* Large Screens (Laptops and smaller desktops) */
 @media only screen and (min-width: 992px) {
   .navbar .navbar-nav a {
-    font-size: 2.5rem; 
+    font-size: 1.5rem; 
   }
 
   .coverphoto-text p {
-    font-size: 1.7rem; 
+    font-size: 2rem; 
   }
 
   .gallery-container {
@@ -139,7 +145,7 @@ body {
   }
 
   .coverphoto-text p {
-    font-size: 3.0rem; 
+    font-size: 2.5 rem; 
   }
 
   .gallery-container {

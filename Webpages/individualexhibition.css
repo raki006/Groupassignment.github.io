@@ -1,0 +1,349 @@
+html {
+  font-size: 62.5%; /* 10px base font size */
+  overflow-x: hidden;
+}
+body {
+  
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('background2.jpg') no-repeat center center fixed; /* Replace with your background image */
+  background-size: cover;
+  
+  
+}
+
+
+
+.topcontainer{
+  display:flex;
+flex-direction: column;
+}
+
+.individualcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 1rem;
+  z-index: 2;
+  position: relative;
+}
+
+.iconname {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  
+  margin-top: 2rem;
+ 
+}
+
+.NameSurname h1 {
+  font-size: 2rem;
+  color: #ffffff;
+  padding: 1rem;
+  margin: 1.5rem;
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+ 
+}
+
+.student1 {
+ border-radius: 50%;
+ margin: 0 auto;
+padding:3rem ;
+width: 25rem;
+height: 25rem;
+
+}
+
+.student1:hover {
+
+  transform: scale(1.1);
+ 
+}
+
+
+.social-icons a img {
+
+  height: 2rem;
+  margin:  0.25rem;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+  background-color: #dd8628;
+}
+
+.webpage-navigation {
+
+  margin-top: 2rem;
+}
+
+
+
+
+
+
+/* Grid Container - Center and move down */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  grid-gap: 1rem;
+  margin-top: 15rem;
+  padding: 2rem;
+  width: 100%; /* Control the grid width */
+ 
+}
+
+.grid-item {
+  padding: 2rem;
+  font-family: "Montserrat", serif;
+  text-align: justify;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-top: 6rem;
+  margin-bottom: 6rem;;
+}
+
+.text {
+  color: #ffffff;
+  font-family: "Syne Mono", monospace;
+  font-size: 5rem;
+  margin: 18rem;
+  
+}
+
+.slideshow-container { /* carousel container*/
+  width: 50rem;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 2rem;
+  margin: auto;
+
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+ 
+  position: absolute;
+  top: 50%;
+  padding: 1.6rem;
+  color: #ffe165;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition: 0.6s ease;
+  border-radius: 0 0.3rem 0.3rem 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.prev:hover, .next:hover {
+  background-color: #dd8628;
+  border-radius: 50%;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+.webpage-prev, .webpage-next {
+  display: inline-block;
+  padding: 1rem 2rem;
+  color: #ffe165;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  transition: background-color 0.3s ease;
+  margin: auto;
+}
+
+.webpage-prev:hover, .webpage-next:hover {
+  background-color: #dd8628;
+  border-radius: 50%;
+}
+
+.end-of-page {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #ffffff;
+  width: 100%;
+  padding: 1.5rem;
+  font-family: "Syne Mono", monospace;
+  height: 2.5rem;
+/* Base font size */
+
+}
+
+
+
+
+
+
+/* media query for smaller screens*/
+
+@media only screen and (max-width: 425px) { /* Adjust max-width as needed */
+  #fullscreen-image {
+    height: 30%; /* Reduce height further for smaller screens */
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    margin-top: 1.5rem; /* Reduce top margin slightly */
+    padding: 0.5rem; /* Reduce padding */
+    width: 90%; /* Increase width to accommodate content */
+  }
+
+  .student1 {
+    width: 12rem; 
+    height: 12rem; /* Reduce photo size further */
+  }
+
+  .grid-item {
+    font-size: 1.8rem; /* Further reduce font size */
+    padding: 0.75rem; /* Reduce padding */
+  }
+
+  .slideshow-container{
+    height:20rem;
+    width: 20rem;
+  }
+
+  .text{ 
+    margin:8rem;
+  }
+}
+
+/* Small Devices (max-width: 576px) */
+@media only screen and (max-width: 576px) {
+  #fullscreen-image {
+    height: 35%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1 rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 80%;
+  }
+
+  .student1 {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .grid-item {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+  .slideshow-container{
+    height: 40rem;
+    width:40rem;
+  }
+}
+
+/* Medium Devices (max-width: 746px) */
+@media only screen and (max-width: 746px) {
+  #fullscreen-image {
+    height: 45%;
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .student1 {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .grid-item {
+    padding: 1rem;
+    
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Large Devices (min-width: 747px and max-width: 1024px) */
+@media only screen and (min-width: 747px) and (max-width: 1024px) {
+  #fullscreen-image {
+    height: 50%;
+    width: 100%;
+  }
+
+  .grid-container {
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .student1 {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .grid-item {
+    font-size: 2.5rem;
+    padding: 2rem;
+  }
+
+  .social-icons {
+    justify-content: space-around;
+  }
+}
+
