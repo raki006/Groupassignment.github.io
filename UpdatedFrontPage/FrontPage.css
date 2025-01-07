@@ -175,28 +175,21 @@ body {
 
 /* Transparent Navbar */
 .navbar {
-    background: transparent !important;
-    transition: background-color 0.3s ease; /* Smooth transition */
-    z-index: 10;
-  }
-  .navbar-dark .navbar-brand,
-  .navbar-dark .nav-link {
-    color: #fff !important; /* White text */
-    transition: color 0.3s ease;
-    font-family: "Syne Mono", monospace;
-  }
-  .navbar-dark .nav-link:hover {
-    color: #00d9ff !important; /* Highlight color on hover */
-  }
-  .navbar.scrolled {
-    background: rgba(0, 0, 0, 1) !important; /* Solid black background on scroll */
-  }
-  
-  /* Solid Navbar for Sponsors */
-.solid-navbar {
-    background: rgba(0, 0, 0, 1) !important; /* Solid black background */
-  }
-  
+  background: transparent !important;
+  transition: background-color 0.3s ease; /* Smooth transition */
+  z-index: 10;
+}
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link {
+  color: #fff !important; /* White text */
+  transition: color 0.3s ease;
+}
+.navbar-dark .nav-link:hover {
+  color: #00d9ff !important; /* Highlight color on hover */
+}
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 1) !important; /* Solid black background on scroll */
+}
 
 .intro {
     padding: 2rem 0;
@@ -270,4 +263,58 @@ body {
 
 .logo h1 {
     font-family: 'Arial';
+}
+
+
+
+
+
+/* The text seen in the sponsor section */
+/*This is for the Our Sponsors Heading */
+#sponsors h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+    /*This is for the text under the heading of the sponsor section */
+  #sponsors p {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+
+  .social-icons a i {
+    color: #ffffff; 
+  }
+  .social-icons a {
+    text-decoration: none; /* Removes underline from anchor tag */
+}
+
+.social-icons a i {
+    vertical-align: center; /* Aligns icon in the center */
+    display: inline-block; /* Makes the icon behave like a block element */
+    line-height: 1; /* Removes extra spacing */
+    margin: 0 15px;  /* Adjust spacing between icons */
+}
+
+  
+  #contact h2 {
+    color: #ffffff;
+    margin-top: 170px; 
+    font-weight: bold; /* to make the font bold */
+    font-size: 3rem; /* to adjust font size */
+  }
+
+  .form-label {
+    color: white;
+    font-size: 1.3rem; /* to adjust font size */
+}
+
+.btn-primary {
+    padding: 12px 24px !important; /* Increases the padding with priority */
+    font-size: 18px !important;    /* Increases the font size with priority */
+    margin-top: 20px !important;; /* Moves the button down */
 }
