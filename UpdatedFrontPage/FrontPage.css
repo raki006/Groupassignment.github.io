@@ -103,6 +103,7 @@ body {
     margin-top: 10px;
     color: #000000; 
     font-size: 0.9em; 
+}
 
 .gallery-container::-webkit-scrollbar {
     display: none; 
