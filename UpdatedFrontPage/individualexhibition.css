@@ -69,18 +69,13 @@ height: 25rem;
  
 }
 
-.social-icons {
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-left: 5rem;
-}
+
 
 .social-icons a img {
 
   height: 2rem;
   margin:  0.25rem;
+    margin-left: 5rem;
 }
 
 .social-icons a img:hover {
