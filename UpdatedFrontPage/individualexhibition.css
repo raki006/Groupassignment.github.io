@@ -278,7 +278,7 @@ height: 25rem;
   }
 
   .social-icons {
-    justify-content: center;
+    justify-content: space-around;
   }
   .slideshow-container{
     height: 40rem;
