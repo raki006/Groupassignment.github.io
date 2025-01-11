@@ -227,32 +227,6 @@ body {
     margin-top: 20px; 
 }
 
-.social-footer {
-    position: absolute; 
-    bottom: 0;
-    width: 100%;
-    text-align: center; 
-    background: transparent; 
-}
-
-.social-icons {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.social-icons a {
-    display: flex;
-    justify-content: center;
-}
-
-.social-icons img {
-    width: 30px; 
-    height: auto;
-}
-
 .logo h1 {
     font-family: "Montserrat", serif;;
 }
