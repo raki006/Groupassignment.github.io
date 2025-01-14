@@ -26,6 +26,12 @@ body {
       align-items: center; 
        color: white; text-align: center; }
 
+/* this is to make the scrolling smooth */
+
+       html {
+        scroll-behavior: smooth;
+    }
+
 
 .gallery-container {
     height: 100vh; 
