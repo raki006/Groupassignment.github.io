@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--The following code is to make our site more accessible and easy to find whenever bfa2025.live is searched-->
+<meta name="description" content="BFA 2025 Exhibition - Explore student art projects and exhibitions. Join us to celebrate creativity and innovation.">
+<meta name="keywords" content="BFA Exhibition, Student Art, Art Projects, 2025 Exhibition">
+<meta name="author" content="Your Name or Organization">
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+     <!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FrontPage.css">
+</head>
+<body>
+
+  <!-- Transparent Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">[INT]</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="FrontPage.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#showcase">Exhibition Showcase</a></li>
+          <li class="nav-item"><a class="nav-link" href="Individualexhibition.html">Individual Exhibition</a></li>
+          <li class="nav-item"><a class="nav-link active" href="sponsorsmain.html">Sponsors</a></li> <!--Links to sponsors.html document-->
+          <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <header>
+        <!-- This is for the bar the top -->
+        <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+        </header>
+
+        <section class="fullscreen-container"> 
+            <img id="fullscreen-image" src="classphoto.jpg" alt="Full Screen Image">
+            <div class="content">
+            <h1>BFA 2025 Exhibition</h1>
+        </div>
+        </section>
+        
+        <script>
+            window.addEventListener('scroll', () => {
+                const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+                const clientHeight = document.documentElement.clientHeight;
+        
+                const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100;
+                document.getElementById('progress-bar').style.width = scrolled + '%';
+            });
+        </script>
+        
+        <div class="logo">
+        </div>
+
+    <!-- <section class="fullscreen-container-2">
+        <img id="fullscreen-image" src="background3.jpg" alt="Second Full Screen Image">
+         <div class="content"> -->
+
+
+    <!-- Countdown timer-->
+            <section class="countdown">
+                <h3>Countdown to Exhibition!</h3>
+                <div id="countdown-timer"></div>
+            </section>
+            </main>
+                <script>
+
+window.addEventListener('scroll', () => { 
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop; 
+    const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight; 
+    const clientHeight = document.documentElement.clientHeight; 
+    const scrolled = (scrollTop / (scrollHeight - clientHeight)) * 100; 
+    document.getElementById('progress-bar').style.width = scrolled + '%';
+ });
+                    // JavaScript for Countdown and timer
+                    const countdown = () => {
+                        const countDate = new Date("Jun 1, 2025 00:00:00").getTime();
+                        const now = new Date().getTime();
+                        const gap = countDate - now;
+            
+                        const second = 1000;
+                        const minute = second * 60;
+                        const hour = minute * 60;
+                        const day = hour * 24;
+            
+                        const textDay = Math.floor(gap / day);
+                        const textHour = Math.floor((gap % day) / hour);
+                        const textMinute = Math.floor((gap % hour) / minute);
+                        const textSecond = Math.floor((gap % minute) / second);
+            
+                        document.getElementById('countdown-timer').innerHTML =
+                            `${textDay}d ${textHour}h ${textMinute}m ${textSecond}s`;
+                    };
+            
+                    setInterval(countdown, 1000);
+                </script>
+
+            <section class="fullscreen-intro">
+                 <div class="intro-content">
+                    <h1>Welcome to BFA 2025 Exhibition</h1> 
+                    <p>Explore the projects before diving into the gallery</p>
+                 </div>
+                
+                </section>
+
+            <div class="gallery-container">
+                <div class="gallery-wrapper">
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+        <!-- This is to make the text overlay when user places mouse on top of image -->
+<!--Image 1-->
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student2.jpg" alt="Student 2">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 2-->
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student3.jpg" alt="Student 3">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 3-->
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div> 
+<!--Image 4-->
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 5-->
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student2.jpg" alt="Student 2">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 6-->                    
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student3.jpg" alt="Student 3">
+                            <div class="overlay">Student Name</div>                        
+                        </div>
+                    </div>
+<!--Image 7--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 8--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 9--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student2.jpg" alt="Student 2">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 10--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student3.jpg" alt="Student 3">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 11--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 12--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 13--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student2.jpg" alt="Student 2">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 14--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student3.jpg" alt="Student 3">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+<!--Image 15--> 
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img src="student1.jpg" alt="Student 1">
+                            <div class="overlay">Student Name</div>
+                        </div>
+                    </div>
+               
+                    
+                </div>
+            </section>
+            
+           
+    </section>    
+    </div>
+</body>
+</html>
+
+
+</div>
+</body>
+</html>
