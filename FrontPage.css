@@ -295,4 +295,11 @@ body {
     }
 }
 
+/* This is to make the navbar collapse to the right */
+.navbar-collapse {
+    text-align: right; /* Ensures text alignment on the right */
+}
 
+.navbar-collapse.show {
+    justify-content: flex-end !important; /* Ensures right alignment in the expanded collapsed menu */
+}
