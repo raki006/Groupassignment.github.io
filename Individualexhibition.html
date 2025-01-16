@@ -7,20 +7,17 @@
     <link rel="stylesheet" href="individualexhibition.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    
     <div class="end-of-page"> 
         <a href="index.html">[INT]</a>
-        </div>
+    </div>
 
-
- <!--Start of section 1 -->
+    <!--Start of section 1 -->
     
     <section class="topcontainer"> 
-           
+        
     <div class="individualcontainer">
         <img src="student1.jpg" alt="federica" class="student1">
     </div>
@@ -55,18 +52,12 @@
         <div class="webpage-navigation">
             <a href="individualexhibition3.html" class="webpage-prev"><i class="fas fa-arrow-left"></i></a> <!-- Left arrow icon -->
             <a href="individualexhibition2.html" class="webpage-next"><i class="fas fa-arrow-right"></i></a> <!-- Right arrow icon -->
-            </div>
+        </div>
     </section>
 
-       
         
         
         <!--End of section 1 -->
-
-
-
-
-
 
         <div class="grid-container">
             <!-- Grid Item 1: Paragraph of Text -->
@@ -76,69 +67,66 @@
                 </p>
             </div>
 
-        
             <!-- Grid Item 2: Rotated Text (Project Title) -->
             <div class="grid-item">
                 <div class="text">
                     Project Title
                 </div>
             </div>
-        
+
             <!-- Grid Item 3: Slideshow Container -->
             <div class="grid-item">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
                         <img src="carousel1.jpg" alt="photo1">
                     </div>
-        
+
                     <div class="mySlides fade">
                         <img src="carousel2.jpg" alt="photo2">
                     </div>
-        
+
                     <div class="mySlides fade">
                         <img src="carousel3.jpg" alt="photo3">
                     </div>
-        
+
                     <!-- Next and Previous Buttons for Slideshow -->
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
             </div>
         </div>
+
         
-          
-          <script>
+        <script>
             let slideIndex = 1;
             showSlides(slideIndex);
-          
+        
             // Next/previous controls
             function plusSlides(n) {
-              showSlides(slideIndex += n);
+                showSlides(slideIndex += n);
             }
-          
+        
             // Thumbnail image controls
             function currentSlide(n) {
-              showSlides(slideIndex = n);
+                showSlides(slideIndex = n);
             }
-          
+        
             function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) { slideIndex = 1 }
-              if (n < 1) { slideIndex = slides.length }
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex - 1].style.display = "block";
-              dots[slideIndex - 1].className += " active";
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
             }
-          </script>
-          
+        </script>
 
-  </body>
+</body>
 </html>
-  <!--Raquel-->
