@@ -303,28 +303,3 @@ body {
     font-size: 18px !important;    
     margin-top: 20px !important;
 }
-
-
-/* This is for phones and smaller screens */
-@media (max-width: 768px) {
-    body {
-        font-family: "Montserrat", serif; /* Use Montserrat even on smaller screens */
-    }
-}
-
-/* This is to make the navbar collapse to the right */
-.navbar-collapse {
-    text-align: right; /* Ensures text alignment on the right */
-}
-
-.navbar-collapse.show {
-    justify-content: flex-end !important; /* Ensures right alignment in the expanded collapsed menu */
-}
-
-/* Large Devices (min-width: 747px and max-width: 1024px) */
-@media only screen and (min-width: 747px) and (max-width: 1024px) {
-    .container1 {
-        width: 40%;
-        height:auto;
-    }
-}
