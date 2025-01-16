@@ -194,10 +194,6 @@ body {
 }
 
 .navbar {
-    position: -webkit-sticky;
-     position: sticky;
-     top: 0; 
-     width: 100%;
   font-family: "Syne Mono", monospace;
   background: #3d3d3d;
   transition: background-color 0.3s ease; 
