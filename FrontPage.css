@@ -308,7 +308,7 @@ body {
 /* This is for phones and smaller screens */
 @media (max-width: 768px) {
     body {
-        font-family: "Montserrat", serif; /* Use Montserrat even on smaller screens */
+    font-family: "Montserrat", serif; /* Use Montserrat even on smaller screens */
     }
 }
 
