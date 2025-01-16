@@ -240,6 +240,18 @@ window.addEventListener('scroll', () => {
            
      
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            let navbar = document.querySelector('.navbar');
+            console.log('Navbar position:', navbar.getBoundingClientRect());
+        });
+      
+        window.addEventListener('scroll', () => {
+            let navbar = document.querySelector('.navbar');
+            console.log('Navbar position on scroll:', navbar.getBoundingClientRect());
+        });
+      </script>
+      
 </body>
 </html>
 

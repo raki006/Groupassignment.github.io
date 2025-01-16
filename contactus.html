@@ -66,5 +66,17 @@
       <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
   </div>
   </div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        let navbar = document.querySelector('.navbar');
+        console.log('Navbar position:', navbar.getBoundingClientRect());
+    });
+  
+    window.addEventListener('scroll', () => {
+        let navbar = document.querySelector('.navbar');
+        console.log('Navbar position on scroll:', navbar.getBoundingClientRect());
+    });
+  </script>
+  
 </body>
 </html>
