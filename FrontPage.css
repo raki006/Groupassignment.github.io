@@ -63,11 +63,27 @@ body {
 .image-container {
     position: relative;
     width: 100%;
+    height:100%;
     overflow: hidden;
     cursor: pointer;
 }
 
 .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: filter 0.3s ease;
+}
+
+.container1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container1 img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -78,6 +94,8 @@ body {
 .image-container:hover img {
     filter: brightness(0.7); 
 }
+
+
 
 .overlay {
     position: absolute;
@@ -100,6 +118,7 @@ body {
 .image-container:hover .overlay {
     opacity: 1;
 }
+
 
 .gallery-item img:hover {
     transform: scale(1.05); 
@@ -300,4 +319,12 @@ body {
 
 .navbar-collapse.show {
     justify-content: flex-end !important; /* Ensures right alignment in the expanded collapsed menu */
+}
+
+/* Large Devices (min-width: 747px and max-width: 1024px) */
+@media only screen and (min-width: 747px) and (max-width: 1024px) {
+    .container1 {
+        width: 40%;
+        height:auto;
+    }
 }
