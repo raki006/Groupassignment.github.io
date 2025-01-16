@@ -304,9 +304,6 @@ body {
     margin-top: 20px !important;
 }
 
-body, .navbar-brand, .nav-link, .form-label, .btn-primary {
-    font-family: "Montserrat", serif;
-}
 
 /* This is for phones and smaller screens */
 @media (max-width: 768px) {
