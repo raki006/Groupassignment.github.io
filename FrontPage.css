@@ -336,15 +336,3 @@ body, .navbar-brand, .nav-link, .form-label, .btn-primary {
         height:auto;
     }
 }
-
-
-/* Montserrat for Contact Page to ensure it stays the same on mobile NEW CODE */
-.contact-page {
-    font-family: "Montserrat", sans-serif;
-}
-
-.contact-page h1, .contact-page h2, .contact-page p, .contact-page a, 
-.contact-page .form-label, .contact-page button, .contact-page .form-control {
-    font-family: "Montserrat", sans-serif;
-}
-
