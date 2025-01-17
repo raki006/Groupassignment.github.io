@@ -1,5 +1,5 @@
 body {
-    font-family: "Montserrat", serif;
+    font-family: "Montserrat", serif; /* Modern font */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: url('background2.jpg') no-repeat center center fixed; 
+    background: url('background2.jpg') no-repeat center center fixed; /* Background found from Pinterest */
     background-size: cover;
     scroll-snap-type: y mandatory; 
     overflow-y: scroll; 
@@ -33,7 +33,7 @@ body {
     }
 
 
-.gallery-container {
+.gallery-container { /* Images for Exhibition showcase size and position */
     height: 100vh; 
     overflow-y: auto; 
     position: relative;
@@ -41,7 +41,7 @@ body {
 }
 
 
-.gallery-wrapper {
+.gallery-wrapper { /* Images for Exhibition showcase grid */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); 
     gap: 15px; 
@@ -53,7 +53,7 @@ body {
 }
 
 
-.gallery-item img {
+.gallery-item img { /* Images for Exhibition showcase */
     width: 100%;
     height: 200px;
     border-radius: 8px; 
@@ -97,7 +97,7 @@ body {
 
 
 
-.overlay {
+.overlay { /* Overlay for when you hover on images */
     position: absolute;
     top: 0;
     left: 0;
@@ -120,7 +120,7 @@ body {
 }
 
 
-.gallery-item img:hover {
+.gallery-item img:hover { /* To create the hover feature */
     transform: scale(1.05); 
 }
 
@@ -139,7 +139,7 @@ body {
     scrollbar-width: none; 
 }
 
-#progress-bar-container {
+#progress-bar-container { /* Creating the visual of the progress bar */
     position: fixed;
     top: 0;
     left: 0;
@@ -149,14 +149,14 @@ body {
     z-index: 1000; 
 }
 
-#progress-bar {
+#progress-bar { /* Creating the visual of the progress bar */
     height: 100%;
     width: 0;
-    background-color: #42b031; 
+    background-color: #42b031; /* Colour chosen to match with background */
     transition: width 0.25s;
 }
 
-.fullscreen-container, .fullscreen-container-2 {
+.fullscreen-container, .fullscreen-container-2 { /* Created to keep background image static */
     position: relative;
     height: 100vh; 
     width: 100vw; 
@@ -193,9 +193,9 @@ body {
     text-align: center;
 }
 
-.navbar {
-  font-family: "Syne Mono", monospace;
-  background: #3d3d3d;
+.navbar { /* Creating the visual of the Navbar */
+  font-family: "Syne Mono", monospace; /* Another Modern Font */
+  background: #3d3d3d; /* So it is not transparent and matches with background */
   transition: background-color 0.3s ease; 
   z-index: 10;
 }
@@ -205,11 +205,11 @@ body {
   color: #fff !important; 
   transition: color 0.3s ease;
 }
-.navbar-dark .nav-link:hover {
+.navbar-dark .nav-link:hover { /* When one hovers on Navbar locations  */
   color: #00d9ff !important; 
   font-family: "Syne Mono", monospace;
 }
-.navbar.scrolled {
+.navbar.scrolled { /* When scrolling Navbar stays on the top of the screen  */
   background: rgba(0, 0, 0, 1) !important; 
   font-family: "Syne Mono", monospace;
 }
@@ -219,14 +219,14 @@ body {
     font-family: "Montserrat", serif;
 }
 
-.intro-image { 
+.intro-image { /* Adjusting the image to be centered and static to the top */
     max-width: 50%; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.countdown {
+.countdown { /* Countdown timer visual */
     font-family: "Montserrat", serif;
     display: flex;
     flex-direction: column;
@@ -240,13 +240,13 @@ body {
     width: 100%; 
 }
 
-.countdown h3 {
+.countdown h3 { /* Countdown timer visual */
     font-family: "Montserrat", serif;
     font-size: 4em; 
     margin: 0;
 }
 
-#countdown-timer {
+#countdown-timer { /* Countdown timer visual */
     font-family: "Montserrat", serif;
     font-size: 3em; 
     margin-top: 20px; 
@@ -255,14 +255,15 @@ body {
 .logo h1 {
     font-family: "Montserrat", serif;;
 }
+/* For contactus.html and sponsersmain.html */
 
-#sponsors h1 {
+#sponsors h1 { /* For main title  */
     font-weight: bold;
     font-size: 3rem;
     margin-bottom: 20px;
   }
 
-  #sponsors p {
+  #sponsors p { /* For underneath main title */
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 40px;
@@ -270,14 +271,14 @@ body {
   }
   
 
-  .social-icons a i {
+  .social-icons a i { /* Colour for the Awesome Font icons  */
     color: #ffffff; 
   }
-  .social-icons a {
+  .social-icons a { 
     text-decoration: none;
 }
 
-.social-icons a i {
+.social-icons a i { /* For sponsors images to be gridded */
     vertical-align: center; 
     display: inline-block; 
     line-height: 1; 
@@ -292,7 +293,7 @@ body {
     font-size: 3rem; 
   }
 
-  .form-label {
+  .form-label { /* For boxes colour*/
     color: white;
     font-size: 1.3rem;
 }
@@ -304,7 +305,7 @@ body {
     margin-top: 20px !important;
 }
 
-
+/* For contactus.html */
 
 body, .navbar-brand, .nav-link, .form-label, .btn-primary {
     font-family: "Montserrat", serif;
@@ -312,23 +313,23 @@ body, .navbar-brand, .nav-link, .form-label, .btn-primary {
 
 
 
-/* This is for phones and smaller screens */
+/* This is so the website work for smaller screens */
 @media (max-width: 768px) {
     body {
-    font-family: "Montserrat", serif; /* Use Montserrat even on smaller screens */
+    font-family: "Montserrat", serif; /* To use Montserrat even on smaller screens */
     }
 }
 
 /* This is to make the navbar collapse to the right */
 .navbar-collapse {
-    text-align: right; /* Ensures text alignment on the right */
+    text-align: right; /* Ensures that the dropdown text on the right */
 }
 
 .navbar-collapse.show {
     justify-content: flex-end !important; /* Ensures right alignment in the expanded collapsed menu */
 }
 
-/* Large Devices (min-width: 747px and max-width: 1024px) */
+/* This is for large devices (min-width: 747px and max-width: 1024px) */
 @media only screen and (min-width: 747px) and (max-width: 1024px) {
     .container1 {
         width: 40%;
