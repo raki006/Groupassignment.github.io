@@ -21,14 +21,14 @@ body {
 }
 
 .end-of-page a:hover {
-  color: #00d9ff; /* Optional: Change color on hover */
-  text-decoration: none; /* Ensure no underline on hover */
+  color: #00d9ff; /* Change color on hover */
+  text-decoration: none; /* To ensure no underline on hover */
 }
 
 
 .topcontainer{
   display:flex;
-flex-direction: column;
+  flex-direction: column;
 }
 
 .individualcontainer {
@@ -48,7 +48,6 @@ flex-direction: column;
 }
 
 .icon {
-  
   margin-top: 2rem;
  
 }
@@ -66,14 +65,13 @@ flex-direction: column;
 .student1 {
  border-radius: 50%;
  margin: 0 auto;
-padding:3rem ;
-width: 25rem;
-height: 25rem;
+ padding:3rem ;
+ width: 25rem;
+ height: 25rem;
 
 }
 
 .student1:hover {
-
   transform: scale(1.1);
  
 }
@@ -81,10 +79,9 @@ height: 25rem;
 
 
 .social-icons a img {
-
   height: 2rem;
   margin:  0.25rem;
-    margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .social-icons a img:hover {
@@ -93,7 +90,6 @@ height: 25rem;
 }
 
 .webpage-navigation {
-
   margin-top: 2rem;
   display: flex;
   justify-content:center;
@@ -214,11 +210,6 @@ height: 25rem;
 /* Base font size */
 
 }
-
-
-
-
-
 
 /* media query for smaller screens*/
 
