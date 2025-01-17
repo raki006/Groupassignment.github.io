@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="fullscreen-container"> 
-    <img id="fullscreen-image" src="background2.jpg" alt="Full Screen Image">
+    <img id="fullscreen-image" src="background2.jpg" alt="Full Screen Image"> <!--Made them into containers to change the background-->
     <div class="content">
     <h1>BFA 2025 Exhibition!</h1>
 </div>
-    <link rel="stylesheet" href="federicaAlbani.css">
+    <link rel="stylesheet" href="federicaAlbani.css"> <!--CSS Link-->
 
 <body>
     <header>
         <nav> 
             <ul> 
-                <li class="dropdown"> 
+                <li class="dropdown">  <!--Dropdown menu that stays when scrolling-->
                     <a href="javascript:void(0)" class="dropbtn">Menu </a>
                      <div class="dropdown-content"> <a href="#">Home</a> 
                         <a href="#">About</a>
@@ -26,7 +26,7 @@
                     </ul>
                  </nav>
 
-        <div id="progress-bar-container">
+        <div id="progress-bar-container"> <!--Progress bar so people know where they are on the website-->
             <div id="progress-bar"></div>
         </div>
         
@@ -46,7 +46,7 @@
         </div>
     </header>
 
-    <section class="fullscreen-container-2">
+    <section class="fullscreen-container-2"> <!--Created for the Countdown-->
         <img id="fullscreen-image" src="background3.jpg" alt="Second Full Screen Image">
          <div class="content"> 
         </section>
@@ -54,11 +54,12 @@
     <section class="fullscreen-container-2">
         <img id="fullscreen-image" src="background4.jpg" alt="Second Full Screen Image">
         <div class="content"> 
-            <h1>Meet the Artists!</h1>
+
+            <h1>Meet the Artists!</h1> <!--Mini blurb for viewers to know who are the artists-->
             <div class="artist-profile">
                 <div class="artist-image">
-                    <a href="https://www.instagram.com/wisq_qasira/" target="_blank">
-                        <img id="artist-image" src="student1.jpg" alt="Artist">
+                    <a href="https://www.instagram.com/wisq_qasira/" target="_blank"> <!--their personal instagram account-->
+                        <img id="artist-image" src="student1.jpg" alt="Artist"> <!--Image from my personal instagram: https://www.instagram.com/wisq_qasira/-->
                     </a>
                 </div>
                 <div class="artist-info">
@@ -66,9 +67,9 @@
                     <p id="artist-description">Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry, come and step into a world of culture and learnings!</p>
                 </div>
             </div>
-            <button id="next-button" class="arrow-button">Next ➔</button>
+            <button id="next-button" class="arrow-button">Next ➔</button> <!--created next button for easier viewing -->
         </div>
-            <section class="social-footer">
+            <section class="social-footer"> <!--footer to keep the items at the bottom-->
             <div class="social-icons">
                 <a href="#"><img src="facebook.png" alt="Facebook"></a>
                 <a href="#"><img src="instagram.webp" alt="Instagram"></a>
@@ -81,11 +82,11 @@
         <script>
             const profiles = [
                 {
-                    img: 'student1.jpg',
-                    name: 'Maria Federica Albani',
-                    description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!',
+                    img: 'student1.jpg', //image
+                    name: 'Maria Federica Albani', //name
+                    description: 'Federica focuses on digital art and photography and in her work talks about the Maltese creature Il-Ħaddiela. With a dark illustration book and original Maltese poetry peace come and step into a world of culture and learnings!', //blurb
                     
-                    link: 'https://www.instagram.com/wisq_qasira/'
+                    link: 'https://www.instagram.com/wisq_qasira/' //personal instagram
                 },
                 {
                     img: 'student2.jpg',
@@ -99,7 +100,7 @@
                     description: 'Raquel focuses on nostalgia, a feeling we all have felt before. Imagine stepping back into your childhood memories simply by touching objects from that period. The images and Home videos shown are like memories in your mind but translated on a retro screen, making you relive your nostalgia. ',
                     link: 'https://www.instagram.com/ghandi_nghas_kbir/?hl=en'
                 }
-                 //Add more profiles as needed
+                 //Can add more profiles as needed with this system
             ];
             let currentProfileIndex = 0;
     
