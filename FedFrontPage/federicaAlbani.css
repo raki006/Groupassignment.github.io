@@ -43,7 +43,7 @@ body {
 }
 
 
-#fullscreen-image, #fullscreen-image-2 {
+#fullscreen-image-1, #fullscreen-image-2,#fullscreen-image-3 {
     height: 100%;
     width: 100%;
     object-fit: cover; /* Ensures the image covers the container */
@@ -211,25 +211,27 @@ nav ul li a {
 }
 
 .social-footer {
-    position: absolute; /* Ensure it stays in the flow of the document */
-    bottom: 0;
-    width: 100%;
+    position: static; /* Remove absolute positioning */
+    margin-top: auto; /* Push the footer to the bottom if content is short */
+    width: 100%; /* Ensure the footer spans the full width */
     text-align: center; /* Center the content */
-    background: transparent; /* Transparent background */
+    background: #3d3d3d; /* Optional: Background color */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in width calculation */
+    color: white; /* Ensure text color contrasts with background */
 }
 
 .social-icons {
     display: flex;
-    justify-content: space-around; /* Space icons evenly */
-    align-items: center;
-    width: 100%;
-    box-sizing: border-box;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Add spacing between icons */
 }
 
-.social-icons a {
-    display: flex;
-    justify-content: center;
+.social-icons img {
+    width: 30px; /* Adjust icon size */
+    height: 30px;
 }
+
 
 .social-icons img {
     width: 30px; /* Set the size of the icons */
