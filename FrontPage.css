@@ -196,19 +196,19 @@ body {
 .navbar { /* Creating the visual of the Navbar */
   font-family: "Montserrat", serif; /* Another Modern Font */
   background: #3d3d3d; /* So it is not transparent and matches with background */
-  colour:#ffffff;
+  color:#ffffff;
   transition: background-color 0.3s ease; 
   z-index: 10;
 }
 .navbar-dark .navbar-brand,
 .navbar-dark .nav-link {
-  font-family: ""Montserrat", serif;
-  color: #fff !important; 
+  font-family: "Montserrat", serif;
+  color: #ffffff !important; 
   transition: color 0.3s ease;
 }
 .navbar-dark .nav-link:hover { /* When one hovers on Navbar locations  */
   color: #00d9ff !important; 
-  font-family: ""Montserrat", serif;
+  font-family: "Montserrat", serif;
 }
 .navbar.scrolled { /* When scrolling Navbar stays on the top of the screen  */
   background: rgba(0, 0, 0, 1) !important; 
