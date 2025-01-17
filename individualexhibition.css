@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%; /* 10px base font size */
+  font-size: 62.5%; /* Font size is 10px */
   overflow-x: hidden;
 }
 body {
@@ -9,12 +9,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('background2.jpg') no-repeat center center fixed; /* Replace with your background image */
+  background: url('background2.jpg') no-repeat center center fixed; /* Background image found from Pinterest */
   background-size: cover;
   
   
 }
 
+.end-of-page a {
+  color: #fff; /* Set the color to white */
+  text-decoration: none; /* Remove the underline */
+}
+
+.end-of-page a:hover {
+  color: #00d9ff; /* Optional: Change color on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+}
 
 
 .topcontainer{
@@ -91,12 +100,6 @@ height: 25rem;
   gap:1rem;
   margin-top: 2rem;
 }
-
-
-
-
-
-
 
 /* Grid Container - Center and move down */
 .grid-container {
