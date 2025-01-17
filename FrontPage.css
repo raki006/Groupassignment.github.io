@@ -196,7 +196,7 @@ body {
 .navbar { /* Creating the visual of the Navbar */
   font-family: "Montserrat", serif; /* Another Modern Font */
   background: #3d3d3d; /* So it is not transparent and matches with background */
-  font-colour:#ffffff;
+  colour:#ffffff;
   transition: background-color 0.3s ease; 
   z-index: 10;
 }
