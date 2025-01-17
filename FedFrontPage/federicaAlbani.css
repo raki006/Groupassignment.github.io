@@ -33,6 +33,16 @@ body {
     width: 100vw; /* Full width of the viewport */
 }
 
+.fullscreen-container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+}
+
+
 #fullscreen-image, #fullscreen-image-2 {
     height: 100%;
     width: 100%;
@@ -225,16 +235,6 @@ nav ul li a {
     width: 30px; /* Set the size of the icons */
     height: auto;
 }
-
-/*footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background: #3a3a3a; /* Background color for visibility 
-    box-sizing: border-box;
-} */
-
 
 .logo h1 {
     font-family: 'Arial';
