@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* font used*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 
-#progress-bar-container {
+#progress-bar-container { /*Progress bar */
     position: fixed;
     top: 0;
     left: 0;
