@@ -10,8 +10,8 @@ body {
     align-items: center;
 }
 
-#progress-bar-container { /*Progress bar */
-    position: fixed;
+#progress-bar-container { /*Progress bar holder */
+    position: fixed; /* Stays as is */
     top: 0;
     left: 0;
     width: 100%;
@@ -23,17 +23,17 @@ body {
 #progress-bar {
     height: 100%;
     width: 0;
-    background-color: #42b031; /* Color of the progress bar */
+    background-color: #42b031; /* Color of the progress bar to match the background */
     transition: width 0.25s;
 }
 
-.fullscreen-container, .fullscreen-container-2 {
+.fullscreen-container, .fullscreen-container-2 { /* For background image */
     position: relative;
     height: 100vh; /* Full height of the viewport */
     width: 100vw; /* Full width of the viewport */
 }
 
-.fullscreen-container-2 {
+.fullscreen-container-2 { /* For background image */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +43,8 @@ body {
 }
 
 
-#fullscreen-image-1, #fullscreen-image-2,#fullscreen-image-3 {
-    height: 100%;
+#fullscreen-image-1, #fullscreen-image-2,#fullscreen-image-3 { /* For background image */
+    height: 100%; 
     width: 100%;
     object-fit: cover; /* Ensures the image covers the container */
     position: absolute;
@@ -53,7 +53,7 @@ body {
     z-index: -1; /* Ensures the image is behind the content */
 }
 
-.content {
+.content { /* Make sure all the items are centered and columed */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,7 +81,7 @@ nav {
     z-index: 1001;  /* Ensures the nav is above the background */
 }
 
-nav ul {
+nav ul { /* The dropdown menu bar */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -95,7 +95,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: white; /* Colour of words */
     text-decoration: none;
     font-weight: bold;
 }
@@ -105,7 +105,7 @@ nav ul li a {
 }
 
 .dropbtn {
-    background-color: transparent;
+    background-color: transparent; /* So there isnt another colour involved */
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -131,7 +131,7 @@ nav ul li a {
     display: block;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover { /* When you hover on the buttons it will turn red */
     background-color: #e64a19;
 }
 
@@ -150,7 +150,7 @@ nav ul li a {
     align-items: center;
 }
 
-.countdown {
+.countdown { /* Make sure countdown is centered */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -172,7 +172,7 @@ nav ul li a {
 }
 
 
-.centered-image { 
+.centered-image { /* Meet the artists images */
     width: 350px; 
     height: 200px;
 }
@@ -183,7 +183,7 @@ nav ul li a {
     margin: 2rem 0;
 }
 
-.artist-image img {
+.artist-image img { /* Circular image */
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -195,7 +195,7 @@ nav ul li a {
     max-width: 500px;
 }
 
-.arrow-button {
+.arrow-button { /* Next button visuals */
     background-color: #ce2c2c;
     color: white;
     border: none;
@@ -211,14 +211,14 @@ nav ul li a {
 }
 
 .social-footer {
-    position: static; /* Remove absolute positioning */
+    position: static; 
     margin-top: auto; /* Push the footer to the bottom if content is short */
     width: 100%; /* Ensure the footer spans the full width */
     text-align: center; /* Center the content */
-    background: #3d3d3d; /* Optional: Background color */
+    background: #3d3d3d; 
     padding: 20px; /* Add padding for spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
-    color: white; /* Ensure text color contrasts with background */
+    box-sizing: border-box; 
+    color: white;
 }
 
 .social-icons {
@@ -239,5 +239,5 @@ nav ul li a {
 }
 
 .logo h1 {
-    font-family: 'Arial';
+    font-family: 'Arial'; /* Font used throughout */
 }
